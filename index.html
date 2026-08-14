@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Legal &amp; Support — Nezzo</title>
+<meta name="description" content="Policies and support information for Nezzo.">
+<style>
+:root{
+  --bg:#ffffff; --fg:#1a1a1f; --muted:#5c5c6b; --rule:#e3e3ea;
+  --accent:#594ef2; --card:#f7f7fb;
+}
+:root:not([data-theme="light"]){}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f0f14; --fg:#e8e8ef; --muted:#a0a0b0; --rule:#2a2a35;
+    --accent:#9b93ff; --card:#17171f;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f0f14; --fg:#e8e8ef; --muted:#a0a0b0; --rule:#2a2a35;
+  --accent:#9b93ff; --card:#17171f;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--fg);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:46rem; margin:0 auto; padding:3rem 1.5rem 5rem}
+header.site{border-bottom:1px solid var(--rule); margin-bottom:2.5rem; padding-bottom:1.25rem;
+  display:flex; align-items:baseline; gap:1rem; flex-wrap:wrap}
+header.site a.brand{font-weight:650; color:var(--fg); text-decoration:none; font-size:1.05rem;
+  letter-spacing:-.01em}
+header.site nav{margin-left:auto; display:flex; gap:1.25rem; font-size:.9rem}
+header.site nav a{color:var(--muted); text-decoration:none}
+header.site nav a:hover, header.site nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem; line-height:1.2; letter-spacing:-.02em; margin:0 0 .75rem}
+h2{font-size:1.2rem; letter-spacing:-.01em; margin:2.5rem 0 .6rem; padding-top:.25rem}
+h3{font-size:1rem; color:var(--fg); margin:1.5rem 0 .4rem}
+p{margin:0 0 1rem}
+ul{margin:0 0 1rem; padding-left:1.25rem}
+li{margin:.35rem 0}
+strong{font-weight:640}
+a{color:var(--accent)}
+.updated{color:var(--muted); font-size:.9rem; margin:0 0 2rem;
+  padding:.6rem .9rem; background:var(--card); border-radius:.4rem; display:inline-block}
+footer.site{margin-top:4rem; padding-top:1.25rem; border-top:1px solid var(--rule);
+  color:var(--muted); font-size:.875rem}
+footer.site a{color:var(--muted)}
+.cards{display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); margin-top:2rem}
+.card{background:var(--card); border:1px solid var(--rule); border-radius:.6rem; padding:1.25rem 1.4rem}
+.card h2{margin:0 0 .35rem; font-size:1.05rem}
+.card p{margin:0 0 .75rem; color:var(--muted); font-size:.925rem}
+.card a{font-weight:600; text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+  <a class="brand" href="https://nezzo.io">Nezzo</a>
+  <nav><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/support">Support</a></nav>
+</header>
+<main>
+<h1>Legal &amp; Support</h1>
+<p>Policies and support information for <strong>Nezzo</strong> and the
+<strong>Nezzo AI Assistant</strong> app for Microsoft Teams.</p>
+<div class="cards">
+  <div class="card">
+    <h2>Privacy Policy</h2>
+    <p>How we collect, process and retain your data, including agent definitions,
+       execution logs and integration credentials.</p>
+    <a href="/privacy">Read the Privacy Policy &rarr;</a>
+  </div>
+  <div class="card">
+    <h2>Terms of Service</h2>
+    <p>The agreement governing your use of the Nezzo platform, agent autonomy
+       and your responsibilities as a customer.</p>
+    <a href="/terms">Read the Terms of Service &rarr;</a>
+  </div>
+  <div class="card">
+    <h2>Support</h2>
+    <p>How to reach us, what to include in a support request, and where to
+       report a security issue.</p>
+    <a href="/support">Get support &rarr;</a>
+  </div>
+</div>
+
+</main>
+<footer class="site">
+  <p>Nezzo — <a href="https://nezzo.io">nezzo.io</a> — <a href="mailto:info@nezzo.io">info@nezzo.io</a></p>
+</footer>
+</div>
+</body>
+</html>
